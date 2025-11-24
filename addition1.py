@@ -5,7 +5,7 @@ def add(a, b):
 
 def main():
     if len(sys.argv) != 3:
-        print("Usage: python addition.py <num1> <num2>")
+        print("Usage: python addition1.py <num1> <num2>")
         sys.exit(1)
 
     try:
