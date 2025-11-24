@@ -3,7 +3,7 @@ import sys
 def add(a, b):
     return a + b
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     # Ensure correct number of arguments
     if len(sys.argv) != 3:
         print("Usage: python add.py <num1> <num2>")
@@ -14,4 +14,4 @@ if _name_ == "_main_":
     y = int(sys.argv[2])
 
     # Print the sum
-    print("Sum:", add(x, y))
+    print("Sum:", add(x, y))
