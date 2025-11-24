@@ -1,17 +1,8 @@
-import sys
-
-def add(a, b):
-    return a + b
+from addition import add
 
 if __name__ == "__main__":
-    # Ensure correct number of arguments
-    if len(sys.argv) != 3:
-        print("Usage: python add.py <num1> <num2>")
-        sys.exit(1)
+    a = int(input("Enter first number: "))
+    b = int(input("Enter second number: "))
 
-    # Convert arguments to integers
-    x = int(sys.argv[1])
-    y = int(sys.argv[2])
-
-    # Print the sum
-    print("Sum:", add(x, y))
+    result = add(a, b)
+    print("Result:", result)
